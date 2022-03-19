@@ -9,12 +9,18 @@ const verifyToken = (req, res, next) => {
   }
 
   try {
-    const decode = jwt.verify(req.headers.authorization.split(' ')[1]);
-    req.userId = decode.user;
+    const decode = jwt.verify(
+      req.headers.authorization.split(' ')[1],
+      process.env.ACCESS_TOKEN_SECRETE
+    );
+    req.userId = decode.userId;
     next();
   } catch (error) {
     console.log(error.message);
-    return res.json({ success: false, message: 'Token invalid' });
+    return res.json({
+      success: false,
+      message: 'Internal Server Error/Token invalid',
+    });
   }
 };
 

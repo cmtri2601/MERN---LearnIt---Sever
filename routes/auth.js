@@ -42,7 +42,7 @@ router.post('/register', async (req, res) => {
     res.json({ success: true, message: 'Register successfully' });
   } catch (error) {
     console.log(error.message);
-    res.json({ success: false, message: 'Internal Error' });
+    res.json({ success: false, message: 'Internal Server Error' });
   }
 });
 
@@ -83,7 +83,7 @@ router.post('/login', async (req, res) => {
     }
   } catch (error) {
     console.log(error.message);
-    res.json({ success: false, message: 'Internal Error' });
+    res.json({ success: false, message: 'Internal Server Error' });
   }
 });
 

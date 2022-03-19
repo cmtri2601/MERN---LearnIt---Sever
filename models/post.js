@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
 const PostSchema = mongoose.Schema({
-  username: {
-    title: String,
+  title: {
+    type: String,
     require: true,
   },
   description: {
@@ -16,9 +16,9 @@ const PostSchema = mongoose.Schema({
     enum: ['TO LEARN', 'LEARNING', 'LEARNED'],
     default: 'TO LEARN',
   },
-  user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  postBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
 });
 
-const User = mongoose.model('User', UserSchema);
+const Post = mongoose.model('Post', PostSchema);
 
-module.exports = User;
+module.exports = Post;
