@@ -71,7 +71,7 @@ router.post('/login', async (req, res) => {
     if (!existUser) {
       return res.json({
         success: false,
-        message: 'Username or/and password are wrong 1',
+        message: 'Username or/and password are wrong',
       });
     }
 
@@ -80,7 +80,7 @@ router.post('/login', async (req, res) => {
     if (!checkPassword) {
       return res.json({
         success: false,
-        message: 'Username or/and password are wrong 2',
+        message: 'Username or/and password are wrong',
       });
     } else {
       const token = jwt.sign(
