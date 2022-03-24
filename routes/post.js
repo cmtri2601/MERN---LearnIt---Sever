@@ -59,7 +59,7 @@ router.put('/:id', verifyToken, async (req, res) => {
       }
     );
 
-    res.json({ success: true, message: 'Excellent process!' });
+    res.json({ success: true, message: 'Excellent process!', post });
   } catch (error) {
     console.log(error.message);
     res.json({ success: false, message: 'Internal Server Error!' });

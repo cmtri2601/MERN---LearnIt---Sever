@@ -21,18 +21,18 @@ Content-Type: application/json
 
 ###
 GET http://localhost:5000/api/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjMyZDQ5MmJkNTZmNDU1ODQyYTlmM2UiLCJpYXQiOjE2NDc1MDk3NjN9.Nwbt20zlPPnoXggZkLJ0LUhwSmTs_vm68EsMrg3r_Zs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjMyZDQ5MmJkNTZmNDU1ODQyYTlmM2UiLCJpYXQiOjE2NDc5NDU1Nzl9.xKnVB7hm9aNdiRVPuDUCPes0WAcx_RWN3uILm8MsJWs
 
 ###
 POST http://localhost:5000/api/posts
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjMyZDQ5MmJkNTZmNDU1ODQyYTlmM2UiLCJpYXQiOjE2NDc1MDk3NjN9.Nwbt20zlPPnoXggZkLJ0LUhwSmTs_vm68EsMrg3r_Zs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjMyZDQ5MmJkNTZmNDU1ODQyYTlmM2UiLCJpYXQiOjE2NDc5NDU1Nzl9.xKnVB7hm9aNdiRVPuDUCPes0WAcx_RWN3uILm8MsJWs
 
 {
   "title": "NodeJS",
     "description": "NodeJS is a framework for back-end written by JavaScript",
     "url": "nodejs.org",
-    "status": "TO LEARN"
+    "status": "LEARNING"
 }
 
 ###
